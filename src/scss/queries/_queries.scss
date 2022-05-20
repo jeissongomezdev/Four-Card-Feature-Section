@@ -1,0 +1,54 @@
+@media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .header {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 500px;
+
+    &__title {
+      max-width: 310px;
+      font-size: 2.5rem;
+    }
+  }
+
+  .box {
+    margin: 1.5rem;
+    width: 340px;
+    height: 220px;
+  }
+
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1300px;
+
+    &__title {
+      font-size: 2rem;
+    }
+
+    &__text {
+      font-size: 1.4rem;
+    }
+
+    &__supervisor {
+      transform: translateY(50%);
+    }
+
+    &__karma {
+      order: 1;
+    }
+
+    &__calculator {
+      transform: translateY(50%);
+    }
+  }
+}
