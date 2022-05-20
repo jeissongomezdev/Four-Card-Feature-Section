@@ -1,4 +1,8 @@
 import "./App.scss";
+import supervisor from "../images/icon-supervisor.svg";
+import team from "../images/icon-team-builder.svg";
+import karma from "../images/icon-karma.svg";
+import calculator from "../images/icon-calculator.svg";
 
 function App() {
   return (
@@ -6,7 +10,7 @@ function App() {
       <div className="container">
         <div className="header">
           <h2 className="header__title">
-            Reliable, efficient delivery <span>Powered by Technology</span>
+            <span>Reliable, efficient delivery</span> Powered by Technology
           </h2>
           <p className="header__text">
             Our Artificial Intelligence powered tools use millions of project
@@ -14,50 +18,34 @@ function App() {
           </p>
         </div>
         <div className="card">
-          <section className="card__supervisor">
+          <section className="card__supervisor box">
             <h2 className="card__title">Supervisor</h2>
             <p className="card__text">
               Monitors activity to identify project roadblocks
             </p>
-            <img
-              className="card__img"
-              src="../images/icon-supervisor.svg"
-              alt="Icon Supervisor"
-            />
+            <img className="card__img" src={supervisor} alt="Icon Supervisor" />
           </section>
-          <section className="card__team">
+          <section className="card__team box">
             <h2 className="card__title">Team Builder</h2>
             <p className="card__text">
               Scans our talent network to create the optimal team for your
               project
             </p>
-            <img
-              className="card__img"
-              src="../images/icon-team-builder.svg"
-              alt="Icon Team Builder"
-            />
+            <img className="card__img" src={team} alt="Icon Team Builder" />
           </section>
-          <section className="card__karma">
+          <section className="card__karma box">
             <h2 className="card__title">Karma</h2>
             <p className="card__text">
               Regularly evaluates our talent to ensure quality
             </p>
-            <img
-              className="card__img"
-              src="../images/icon-karma.svg"
-              alt="Icon Karma"
-            />
+            <img className="card__img" src={karma} alt="Icon Karma" />
           </section>
-          <section className="card__calculator">
+          <section className="card__calculator box">
             <h2 className="card__title">Calculator</h2>
             <p className="card__text">
               Uses data from past projects to provide better delivery estimates
             </p>
-            <img
-              className="card__img"
-              src="../images/icon-calculator.svg"
-              alt="Icon calculator"
-            />
+            <img className="card__img" src={calculator} alt="Icon calculator" />
           </section>
         </div>
       </div>
